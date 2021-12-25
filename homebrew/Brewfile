@@ -1,19 +1,11 @@
-cask_args appdir: "/Applications"
-
-# update Homebrew
-update
-
-# update already-installed formulae
-upgrade
-
-# packages
-
 # tap
 tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-drivers"
+
+cask_args appdir: "/Applications"
 
 # brew
 brew "asdf"
