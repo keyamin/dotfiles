@@ -1,14 +1,12 @@
-THIS_DIR=$(cd "$(dirname "$0")"; && pwd)
+THIS_DIR=$(cd $(dirname $0); pwd)
 
-for dotfile in .zshrc .fzf.zsh alias.zsh .gitconfig
-do
+for dotfile in .zshrc .fzf.zsh alias.zsh .gitconfig; do
 	ln -snfv "$(pwd)/$dotfile" "$HOME/$dotfile"
 done
 
 mkdir -p $HOME/.config/nvim
 ln -snfv "$(pwd)/.config/starship.toml" "$HOME/.config/starship.toml"
 ln -snfv "$(pwd)/.config/nvim/init.vim" "$HOME/.config/nvim/init.vim"
-
 
 # Homebrew
 cd $THIS_DIR/homebrew
