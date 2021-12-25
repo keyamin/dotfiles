@@ -1,0 +1,77 @@
+{
+  "editor.fontFamily": "HackGenNerd",
+  "vim.hlsearch": true,
+  "eslint.validate": ["typescript", "typescriptreact"],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.trimTrailingWhitespace": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "FIXME": {
+      "background": "#ffc0cb",
+      "foreground": "#8b0000"
+    },
+    "TODO": {
+      "background": "#7fffd4",
+      "foreground": "#00008b"
+    }
+  },
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorTheme": "GitHub Dark Dimmed",
+  "go.formatTool": "gofmt",
+  "go.toolsManagement.autoUpdate": true,
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/takahirohatakeyama/.config/nvim/init.vim",
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+  "yaml.validate": false,
+  "redhat.telemetry.enabled": true,
+  "vscode-neovim.neovimExecutablePaths.linux": "/opt/homebrew/bin/nvim",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs":"active"
+}
+

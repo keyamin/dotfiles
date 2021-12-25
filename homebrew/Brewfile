@@ -1,0 +1,57 @@
+cask_args appdir: "/Applications"
+
+# update Homebrew
+update
+
+# update already-installed formulae
+upgrade
+
+# packages
+
+# tap
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-drivers"
+
+# brew
+brew "asdf"
+brew "bat"
+brew "curl"
+brew "exa"
+brew "fzf"
+brew "jq"
+brew "mas"
+brew "vim"
+brew "neovim --HEAD"
+brew "rsync"
+brew "starship"
+brew "wget"
+brew "yq"
+brew "zoxide"
+
+# cask
+cask "1password"
+cask "alfred"
+cask "deepl"
+cask "discord"
+cask "drawio"
+cask "font-hackgen-nerd"
+cask "google-chrome"
+cask "google-japanese-ime"
+cask "iterm2"
+cask "kindle"
+cask "logitech-options"
+cask "microsoft-teams"
+cask "notion"
+cask "postman"
+cask "slack"
+cask "stoplight-studio"
+cask "visual-studio-code"
+cask "zoom"
+
+## mas
+mas "Magnet", id: 441258766
+mas "Spark", id: 997102246
+mas "TweetDeck", id: 485812721

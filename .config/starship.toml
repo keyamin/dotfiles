@@ -1,0 +1,18 @@
+# ~/.config/starship.toml
+
+# シェルプロンプトの間に空行を挿入します。
+add_newline = true
+
+# ファイルをスキャンする際のタイムアウト時間
+scan_timeout = 10
+
+# 記号の設定
+[character]
+success_symbol = "[▶](bold green)" # コマンド成功時
+error_symbol = "[▶](bold red)"    # コマンド失敗時
+
+# conda環境の表示
+[conda]
+format = "[$symbol$environment](dimmed green) "
+ignore_base = false  # base環境も表示させたい
+
