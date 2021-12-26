@@ -7,11 +7,11 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  test:
     runs-on: macos-latest
 
     steps:
       - uses: actions/checkout@v2
 
-      - name: Run a one-line script
+      - name: Run install script
         run: ${GITHUB_WORKSPACE}/init.sh

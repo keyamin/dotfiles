@@ -13,6 +13,9 @@ cd $THIS_DIR/homebrew
 ./init.sh
 cd $THIS_DIR
 
+# install zinit
+sh -c "$(curl -fsSL https://git.io/zinit-install)"
+
 # asdf plugin
 asdf plugin add nodejs
 
@@ -20,4 +23,6 @@ asdf plugin add nodejs
 cd $THIS_DIR/vscode
 ./sync.sh
 cd $THIS_DIR
+
+bat ~/.zshrc
 
