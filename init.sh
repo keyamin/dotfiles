@@ -1,6 +1,6 @@
 THIS_DIR=$(cd $(dirname $0); pwd)
 
-for dotfile in .zshrc .fzf.zsh alias.zsh .gitconfig; do
+for dotfile in .zshrc .fzf.zsh .alias.zsh .gitconfig .gitignore; do
 	ln -snfv "$(pwd)/$dotfile" "$HOME/$dotfile"
 done
 
@@ -14,15 +14,18 @@ cd $THIS_DIR/homebrew
 cd $THIS_DIR
 
 # install zinit
-sh -c "$(curl -fsSL https://git.io/zinit-install)"
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+if [[ ! -f "$ZINIT_HOME/zinit.zsh" ]]; then
+	mkdir -p "$(dirname $ZINIT_HOME)"
+	git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+fi
 
 # asdf plugin
-asdf plugin add nodejs
+for plugin in nodejs terraform;do
+	asdf plugin add "$plugin"
+done
 
 # VSCode
 cd $THIS_DIR/vscode
 ./sync.sh
 cd $THIS_DIR
-
-bat ~/.zshrc
-

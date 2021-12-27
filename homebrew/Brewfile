@@ -15,10 +15,10 @@ brew "exa"
 brew "fzf"
 brew "jq"
 brew "mas"
-brew "vim"
-brew "neovim --HEAD"
+brew "neovim"
 brew "rsync"
 brew "starship"
+brew "vim"
 brew "wget"
 brew "yq"
 brew "zoxide"
@@ -45,5 +45,6 @@ cask "zoom"
 
 ## mas
 mas "Magnet", id: 441258766
-mas "Spark", id: 997102246
+mas "Spark", id: 1176895641
 mas "TweetDeck", id: 485812721
+mas "LINE", id: 539883307

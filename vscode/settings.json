@@ -1,5 +1,11 @@
 {
   "editor.fontFamily": "HackGenNerd",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
   "vim.hlsearch": true,
   "eslint.validate": ["typescript", "typescriptreact"],
   "eslint.workingDirectories": [
@@ -37,8 +43,6 @@
   "workbench.colorTheme": "GitHub Dark Dimmed",
   "go.formatTool": "gofmt",
   "go.toolsManagement.autoUpdate": true,
-  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
-  "vscode-neovim.neovimInitVimPaths.darwin": "/Users/takahirohatakeyama/.config/nvim/init.vim",
   "yaml.customTags": [
     "!And",
     "!And sequence",
@@ -70,7 +74,6 @@
   ],
   "yaml.validate": false,
   "redhat.telemetry.enabled": true,
-  "vscode-neovim.neovimExecutablePaths.linux": "/opt/homebrew/bin/nvim",
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs":"active"
 }

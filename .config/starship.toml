@@ -8,8 +8,8 @@ scan_timeout = 10
 
 # 記号の設定
 [character]
-success_symbol = "[▶](bold green)" # コマンド成功時
-error_symbol = "[▶](bold red)"    # コマンド失敗時
+success_symbol = "[\\( ´ ▽ ` \\)ﾉ](bold white)" # コマンド成功時
+error_symbol = "[\\(。>ㅿ<。\\)](bold white)"    # コマンド失敗時
 
 # conda環境の表示
 [conda]

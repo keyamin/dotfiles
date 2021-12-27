@@ -5,15 +5,9 @@ if [ ! -d "$VSCODE_SETTING_DIR" ]; then
   mkdir -p "$VSCODE_SETTING_DIR"
 fi
 
-if [ -L "${VSCODE_SETTING_DIR}/settings.json" ]; then
-  rm "${VSCODE_SETTING_DIR}/settings.json"
-fi
-ln -s "${THIS_DIR}/settings.json" "${VSCODE_SETTING_DIR}/settings.json"
+ln -snfv "${THIS_DIR}/settings.json" "${VSCODE_SETTING_DIR}/settings.json"
 
-if [ -L "${VSCODE_SETTING_DIR}/keybindings.json" ]; then
-  rm "${VSCODE_SETTING_DIR}/keybindings.json"
-fi
-ln -s "${THIS_DIR}/keybindings.json" "${VSCODE_SETTING_DIR}/keybindings.json"
+ln -snfv "${THIS_DIR}/keybindings.json" "${VSCODE_SETTING_DIR}/keybindings.json"
 
 if [ -x "$(command -v code)" ]; then
   cat < ./extensions | while read -r line
