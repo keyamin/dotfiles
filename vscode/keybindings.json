@@ -1,1 +1,97 @@
-[]
+[
+    // ファイル・フォルダ削除
+    {
+      "key": "d",
+      "command": "deleteFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+      "key": "alt+cmd+backspace",
+      "command": "-deleteFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    // リネーム
+    {
+      "key": "r",
+      "command": "renameFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+      "key": "enter",
+      "command": "-renameFile",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    // 分割して開く
+    {
+      "key": "v",
+      "command": "explorer.openToSide",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    // コピー
+    {
+      "key": "y",
+      "command": "filesExplorer.copy",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    // ペースト
+    {
+      "key": "p",
+      "command": "filesExplorer.copyFilesExplorer.paste",
+      "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+     // サイドバーのファイラーへ移動
+    {
+      "key": "cmd+0",
+      "command": "workbench.view.explorer"
+    },
+    {
+      "key": "alt+cmd+[Semicolon]",
+      "command": "workbench.action.terminal.new"
+    },
+    // 新規ファイル作成
+    {
+      "key": "shift+cmd+n",
+      "command": "explorer.newFile"
+    },
+    // 新規フォルダ作成
+    {
+      "key": "shift+cmd+m",
+      "command": "explorer.newFolder"
+    },
+    // Git管理
+    // サイドバーのgitボタンクリックの動作
+    {
+      "key": "shift+cmd+g",
+      "command": "workbench.view.scm"
+    },
+    // spaceでエディターにdiffを開きつつカーソルは残したまま
+    {
+      "key": "space",
+      "command": "list.selectAndPreserveFocus",
+      "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
+    // uでステージング
+    {
+      "key": "u",
+      "command": "git.stage",
+      "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
+    // shift + c でコミットメッセージの入力へ
+    {
+      "key": "shift+c",
+      "command": "git.commitStaged",
+      "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
+    // shfit + p でプッシュ
+    {
+      "key": "shift+p",
+      "command": "git.push",
+      "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    },
+    // shift+u でステージングを戻す
+    {
+      "key": "shift+u",
+      "command": "git.unstage",
+      "when": "sideBarFocus && activeViewlet == 'workbench.view.scm'"
+    }
+]

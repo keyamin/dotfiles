@@ -75,6 +75,7 @@
   "yaml.validate": false,
   "redhat.telemetry.enabled": true,
   "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs":"active"
+  "editor.guides.bracketPairs": "active",
+  "git.confirmSync": false,
 }
 

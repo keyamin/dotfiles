@@ -16,3 +16,10 @@ error_symbol = "[\\(。>ㅿ<。\\)](bold white)"    # コマンド失敗時
 format = "[$symbol$environment](dimmed green) "
 ignore_base = false  # base環境も表示させたい
 
+# AWS
+[aws]
+format = '[(on $symbol $profile)]($style)'
+
+# Git
+[git_branch]
+symbol = "🌱 "

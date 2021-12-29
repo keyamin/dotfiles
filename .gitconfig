@@ -3,3 +3,5 @@
 	name = Takahiro Hatakeyama
 [core]
 	excludesfile = ~/.gitignore
+[color]
+	ui = auto

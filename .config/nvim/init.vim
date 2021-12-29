@@ -1,5 +1,7 @@
-" jjでノーマルモードに戻る
-inoremap <silent> jj <ESC>:<C-u>w<CR>:
+set number
+
+" jjで保存しつつノーマルモードに戻る
+inoremap <silent> jj <ESC>:<C-u>w<CR>
 
 " macデフォルトの操作設定に合わせる
 inoremap <C-h> <BS>
