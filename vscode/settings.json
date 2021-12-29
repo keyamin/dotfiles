@@ -76,6 +76,6 @@
   "redhat.telemetry.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.guides.bracketPairs": "active",
-  "git.confirmSync": false,
+  "git.confirmSync": false
 }
 
