@@ -29,3 +29,8 @@ done
 cd $THIS_DIR/vscode
 ./sync.sh
 cd $THIS_DIR
+
+# Mac Setup
+cd $THIS_DIR/macos
+./setup.sh
+cd $THIS_DIR
