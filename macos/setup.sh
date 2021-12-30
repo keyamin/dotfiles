@@ -73,11 +73,17 @@ defaults write -g com.apple.scrollwheel.scaling 5
 defaults write NSGlobalDomain KeyRepeat -int 2
 ## キーのリピート認識時間
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
+## フルキーボードアクセスを有効化
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# Security
+## ファイアウォールon
+sudo defaults write /Library/Preferences/com.Apple.alf globalstate -int 1
 
 # Others
 ## GoogleのパブリックDNSを使用する
 networksetup -setdnsservers Wi-Fi 2001:4860:4860::8844 2001:4860:4860::8888 8.8.4.4 8.8.8.8
 ## 自動で頭文字を大文字にしない
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool "false"
-
-
+## スペルの訂正を無効にする
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool "false"
