@@ -56,7 +56,9 @@ defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 # Trackpad
 ## タップでクリック
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool "true"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool "true"
+defaults -currentHost write -g com.apple.mouse.tapBehavior -bool "true"
 ## 軌跡の速さ
 defaults write -g com.apple.trackpad.scaling 3
 ## スクロールの方向

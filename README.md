@@ -1,35 +1,46 @@
 # dotfiles
 
 ## セットアップ
-- AppStoreにサインイン
+
+- AppStore にサインイン
 - 以下のコードをターミナルで実行(途中、コマンドライン・デベロッパー・ツールのインストール確認ダイアログで「インストール」を選択)
-```
+
+```sh
 cd $HOME
 git clone https://github.com/keyamin/dotfiles.git
 cd dotfiles
 ./init.sh
 ```
-- Macを再起動
 
-## その他手動で行う設定(と同時にTODOでもある)
+- Mac を再起動
+
+## その他手動で行う設定(と同時に TODO でもある)
+
 ### システム環境設定
+
 - デスクトップ画像・ユーザーアイコン編集
-- システム環境設定 > Touch IDで指紋登録
-- システム環境設定 > キーボード > 入力ソースをGoogle日本語入力に変更
-- システム環境設定 > キーボード > ショートカット > Spotlight > Spotlight検索を表示のショートカットをoffにする
-- システム環境設定 > セキュリティとプライバシー > 一般　 > スリープとスクリーンセーバーの解除にパスワードを要求を、開始後すぐにする
-- システム環境設定 > セキュリティとプライバシー > 一般　 > Apple Watchを使ってアプリケーションとこのMacのロックを解除をonにする
-- システム環境設定 > ソフトウェアアップデート > Macを自動的に最新の状態に保つをonにする
+- システム環境設定 > Touch ID で指紋登録
+- システム環境設定 > キーボード > 入力ソースを Google 日本語入力に変更
+- システム環境設定 > キーボード > ショートカット > Spotlight > Spotlight 検索を表示のショートカットを off にする
+- システム環境設定 > セキュリティとプライバシー > 一般 > スリープとスクリーンセーバーの解除にパスワードを要求を、開始後すぐにする
+- システム環境設定 > セキュリティとプライバシー > 一般 > Apple Watch を使ってアプリケーションとこの Mac のロックを解除を on にする
+- システム環境設定 > ソフトウェアアップデート > Mac を自動的に最新の状態に保つを on にする
+
 ### Google Chrome
-- 初回起動時、デフォルトブラウザをchromeに設定
-- Googleアカウントで同期する
+
+- 初回起動時、デフォルトブラウザを chrome に設定
+- Google アカウントで同期する
+
 ### Alfred
-- Genaral > Alfred Hotkeyをcmd + spaceに変更
-- Genaral > Where are youをJapanに設定
-- Features > 1Password > Enable 1Password Bookmarksをonにする
-- Features > Web Boolmarks > Google Chrome Bookmarksをonにする
+
+- General > Alfred Hotkey を cmd + space に変更
+- General > Where are you を Japan に設定
+- Features > 1Password > Enable 1Password Bookmarks を on にする
+- Features > Web Bookmarks > Google Chrome Bookmarks を on にする
 - Appearance > Alfred Modern Dark
-- Appearance > Options > Hide menu bar iconをonにする
-- Advanced > Force KeyboardをAlphanumeric(Google)に変更
+- Appearance > Options > Hide menu bar icon を on にする
+- Advanced > Force Keyboard を Alphanumeric(Google)に変更
+
 ### 1Password
-- 環境設定 > 詳細設定 > Spotlightを有効にして、サードパーティアプリを統合をonにする
+
+- 環境設定 > 詳細設定 > Spotlight を有効にして、サードパーティアプリを統合を on にする
