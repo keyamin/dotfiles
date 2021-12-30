@@ -22,9 +22,13 @@ cd dotfiles
 - システム環境設定 > Touch ID で指紋登録
 - システム環境設定 > キーボード > 入力ソースを Google 日本語入力に変更
 - システム環境設定 > キーボード > ショートカット > Spotlight > Spotlight 検索を表示のショートカットを off にする
+- システム環境設定 > キーホード > ショートカット > Mission Control > デスクトップ n へ切り替えを on にする
 - システム環境設定 > セキュリティとプライバシー > 一般 > スリープとスクリーンセーバーの解除にパスワードを要求を、開始後すぐにする
 - システム環境設定 > セキュリティとプライバシー > 一般 > Apple Watch を使ってアプリケーションとこの Mac のロックを解除を on にする
 - システム環境設定 > ソフトウェアアップデート > Mac を自動的に最新の状態に保つを on にする
+- システム環境設定 > Bluetooth でマウスとキーボードとイヤホンを登録する
+- システム環境設定 > バッテリー > バッテリー > ディスプレイをオフにするを 15 分に設定
+- システム環境設定 > バッテリー > 電源アダプタ > ディスプレイをオフにするを 15 分に設定
 
 ### Google Chrome
 
@@ -44,3 +48,8 @@ cd dotfiles
 ### 1Password
 
 - 環境設定 > 詳細設定 > Spotlight を有効にして、サードパーティアプリを統合を on にする
+
+### iTerm2
+
+- Preferences > General > Preferences > Load preferences from a custom folder or URL を on にし、設定ファイルがあるフォルダを選択する
+- その下の Save changes を Automatically に設定

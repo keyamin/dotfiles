@@ -1,6 +1,6 @@
 THIS_DIR=$(cd $(dirname $0); pwd)
 
-for dotfile in .zshrc .alias.zsh .gitconfig .gitignore; do
+for dotfile in .zshrc .zprofile .alias.zsh .gitconfig .gitignore; do
 	ln -snfv "$(pwd)/$dotfile" "$HOME/$dotfile"
 done
 
