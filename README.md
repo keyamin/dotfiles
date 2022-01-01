@@ -3,10 +3,11 @@
 ## セットアップ
 
 - AppStore にサインイン
-- 以下のコードをターミナルで実行(途中、コマンドライン・デベロッパー・ツールのインストール確認ダイアログで「インストール」を選択)
+- 以下のコードをターミナルで実行
 
 ```sh
 cd $HOME
+xcode-select --install
 git clone https://github.com/keyamin/dotfiles.git
 cd dotfiles
 ./init.sh
@@ -59,3 +60,4 @@ cd dotfiles
 ### VSCode
 
 - GitHub アカウントで認可
+- go のツールのインストールを求められたら、Install All でインストールする

@@ -20,10 +20,13 @@ if [[ ! -f "$ZINIT_HOME/zinit.zsh" ]]; then
 	git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
 fi
 
-# asdf plugin
-for plugin in nodejs terraform;do
+# asdf
+ln -snfv "$(pwd)/.tool-versions" "$HOME/.tool-versions"
+ln -snfv "$(pwd)/.asdfrc" "$HOME/.asdfrc"
+for plugin in nodejs terraform awscli;do
 	asdf plugin add "$plugin"
 done
+asdf install
 
 # VSCode
 cd $THIS_DIR/vscode
