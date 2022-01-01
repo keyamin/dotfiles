@@ -29,11 +29,13 @@ cd dotfiles
 - システム環境設定 > Bluetooth でマウスとキーボードとイヤホンを登録する
 - システム環境設定 > バッテリー > バッテリー > ディスプレイをオフにするを 15 分に設定
 - システム環境設定 > バッテリー > 電源アダプタ > ディスプレイをオフにするを 15 分に設定
+- システム環境設定 > ディスプレイ > メインディスプレイを適宜変更
 
 ### Google Chrome
 
 - 初回起動時、デフォルトブラウザを chrome に設定
 - Google アカウントで同期する
+- [英かなをインストール](https://ei-kana.appspot.com/)し、設定で「メニューバーにアイコンを表示」を off にする
 
 ### Alfred
 
@@ -53,3 +55,7 @@ cd dotfiles
 
 - Preferences > General > Preferences > Load preferences from a custom folder or URL を on にし、設定ファイルがあるフォルダを選択する
 - その下の Save changes を Automatically に設定
+
+### VSCode
+
+- GitHub アカウントで認可
