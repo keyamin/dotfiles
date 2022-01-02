@@ -2,6 +2,7 @@ DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
 GitHub.github-vscode-theme
+GitHub.vscode-pull-request-github
 golang.go
 Gruntfuggly.todo-tree
 kddejong.vscode-cfn-lint
