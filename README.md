@@ -42,7 +42,6 @@ cd dotfiles
 - 初回起動時、デフォルトブラウザを chrome に設定
 - Google アカウントで同期する
 - [英かなをインストール](https://ei-kana.appspot.com/)し、設定で「メニューバーにアイコンを表示」を off にする
-- [Docker をインストール](https://www.docker.com/get-started)する
 
 ### Alfred
 

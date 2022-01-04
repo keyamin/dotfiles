@@ -37,7 +37,7 @@ defaults write com.apple.Finder "AppleShowAllFiles" -bool "true"
 defaults write com.apple.finder ShowPathbar -bool "true"
 ## 未確認ファイルを開くときの警告無効化
 defaults write com.apple.LaunchServices LSQuarantine -bool "false"
-## ゴミ箱を殻にするときの警告無効化
+## ゴミ箱を空にするときの警告無効化
 defaults write com.apple.finder WarnOnEmptyTrash -bool "false"
 
 # Feedback
