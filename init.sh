@@ -10,7 +10,7 @@ ln -snfv "$(pwd)/.config/nvim/init.vim" "$HOME/.config/nvim/init.vim"
 
 # Homebrew
 cd $THIS_DIR/homebrew
-./init.sh
+./setup.sh
 cd $THIS_DIR
 
 # install zinit
@@ -30,10 +30,10 @@ asdf install
 
 # VSCode
 cd $THIS_DIR/vscode
-./sync.sh
+./setup.sh
 cd $THIS_DIR
 
 # Mac Setup
-cd $THIS_DIR/macos
+cd $THIS_DIR/mac
 ./setup.sh
 cd $THIS_DIR
