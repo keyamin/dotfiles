@@ -23,7 +23,7 @@ fi
 # asdf
 ln -snfv "$(pwd)/.tool-versions" "$HOME/.tool-versions"
 ln -snfv "$(pwd)/.asdfrc" "$HOME/.asdfrc"
-for plugin in nodejs terraform awscli;do
+for plugin in nodejs terraform awscli pulumi;do
 	asdf plugin add "$plugin"
 done
 asdf install
