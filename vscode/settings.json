@@ -79,8 +79,10 @@
   "git.confirmSync": false,
   "cSpell.userWords": [
     "dotfiles",
+    "mkdir",
     "Pulumi",
     "Zenn"
-  ]
+  ],
+  "vscodeWorkspaceSwitcher.paths": ["/Users/takahirohatakeyama/myworkspaces"]
 }
 
