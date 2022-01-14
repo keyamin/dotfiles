@@ -28,6 +28,11 @@ alias dla='docker ps -a'
 
 # terraform
 alias tf='terraform'
+alias tfp='terraform plan'
+alias tfa='terraform apply'
+# pulumi
+alias p='pulumi'
+alias pu='pulumi up'
 
 # exa
 if type "exa" > /dev/null 2>&1; then
