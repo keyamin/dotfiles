@@ -79,6 +79,8 @@
   "git.confirmSync": false,
   "cSpell.userWords": [
     "dotfiles",
+    "gorm",
+    "jinzhu",
     "mkdir",
     "Pulumi",
     "Zenn"
