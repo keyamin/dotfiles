@@ -3,5 +3,12 @@
 	name = Takahiro Hatakeyama
 [core]
 	excludesfile = ~/.gitignore
+	editor = vim
+	ignorecase = false
+	quotepath = false
 [color]
 	ui = auto
+[push]
+	default = current
+[init]
+	defaultBranch = main
