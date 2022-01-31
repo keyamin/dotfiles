@@ -2,3 +2,5 @@ awscli 2.4.7
 nodejs 17.3.0
 terraform 1.1.2
 pulumi 3.21.1
+python 3.10.2
+eksctl 0.82.0
