@@ -6,10 +6,12 @@ GitHub.github-vscode-theme
 GitHub.vscode-pull-request-github
 golang.go
 Gruntfuggly.todo-tree
-kddejong.vscode-cfn-lint
 mechatroner.rainbow-csv
 ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-ja
+ms-python.python
+ms-python.vscode-pylance
+ms-toolsai.jupyter
 ms-vscode-remote.remote-containers
 ms-vsliveshare.vsliveshare
 PKief.material-icon-theme
