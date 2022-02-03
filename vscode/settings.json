@@ -84,7 +84,6 @@
     "mkdir",
     "Pulumi",
     "Zenn"
-  ],
-  "vscodeWorkspaceSwitcher.paths": ["/Users/takahirohatakeyama/myworkspaces"]
+  ]
 }
 
