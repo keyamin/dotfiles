@@ -1,5 +1,10 @@
 {
   "editor.fontFamily": "HackGenNerd",
+  "editor.cursorSmoothCaretAnimation": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
   "vim.insertModeKeyBindings": [
     {
       "before": ["j", "j"],
