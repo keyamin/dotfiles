@@ -1,7 +1,7 @@
 THIS_DIR=$(cd $(dirname $0); pwd)
 
-for dotfile in .zshrc .zprofile .alias.zsh .gitconfig .gitignore; do
-	ln -snfv "$(pwd)/$dotfile" "$HOME/$dotfile"
+for dotfile in .zshrc .zprofile .alias.zsh .gitconfig .gitignore .tmux.conf; do
+	ln -snfv "${THIS_DIR}/$dotfile" "$HOME/$dotfile"
 done
 
 mkdir -p $HOME/.config/nvim
