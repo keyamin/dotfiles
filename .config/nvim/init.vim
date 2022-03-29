@@ -3,13 +3,6 @@ set number
 " jjで保存しつつノーマルモードに戻る
 inoremap <silent> jj <ESC>:<C-u>w<CR>
 
-" macデフォルトの操作設定に合わせる
-inoremap <C-h> <BS>
-inoremap <C-f> <Right>
-inoremap <C-b> <Left>
-inoremap <C-p> <UP>
-inoremap <C-n> <Down>
-
 " マウス操作有効化
 set mouse=a
 
