@@ -1,3 +1,4 @@
+aaron-bond.better-comments
 bierner.emojisense
 bierner.markdown-emoji
 christian-kohler.path-intellisense
@@ -8,6 +9,7 @@ esbenp.prettier-vscode
 GitHub.github-vscode-theme
 GitHub.vscode-pull-request-github
 golang.go
+hashicorp.terraform
 humao.rest-client
 ipatalas.vscode-postfix-ts
 mechatroner.rainbow-csv
