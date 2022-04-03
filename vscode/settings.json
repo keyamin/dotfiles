@@ -12,6 +12,7 @@
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.suggestSelection": "first",
   "editor.quickSuggestions": true,
+  "editor.parameterHints.enabled": false,
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": true,
   "files.associations": { "*.tfvars": "terraform" },
@@ -21,6 +22,7 @@
   "git.confirmSync": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": false,
   "gitlens.codeLens.enabled": false,
   "githubPullRequests.fileListLayout": "tree",
   "go.formatTool": "gofmt",
@@ -45,10 +47,10 @@
   "terminal.integrated.fontSize": 16,
   "[terraform]": { "editor.defaultFormatter": "hashicorp.terraform" },
   "vim.hlsearch": true,
+  "vim.useSystemClipboard": true,
   "vim.enableNeovim": true,
   "vim.neovimUseConfigFile": true,
   "vim.neovimConfigPath": "~/.config/nvim/init.vim",
-  "vim.useSystemClipboard": true,
   "vim.vimrc.enable": true,
   "vim.vimrc.path": "~/.config/nvim/init.vim",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -58,5 +60,47 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.tree.indent": 14,
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  // Vim Keybindings
+  "vim.leader": "space",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["K"],
+      "commands": [
+        {
+          "command": "editor.action.showHover"
+        }
+      ]
+    },
+    {
+      "before": ["leader", "d", "n"],
+      "commands": [
+        {
+          "command": "editor.action.openLink"
+        },
+        {
+          "command": "editor.action.goToTypeDefinition"
+        },
+        {
+          "command": "editor.action.revealDefinition"
+        }
+      ]
+    },
+    {
+      "before": ["leader", "d", "a"],
+      "commands": [
+        {
+          "command": "editor.action.revealDefinitionAside"
+        }
+      ]
+    },
+    {
+      "before": ["leader", "d", "h"],
+      "commands": [
+        {
+          "command": "editor.action.peekDefinition"
+        }
+      ]
+    }
+  ]
 }
