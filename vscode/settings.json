@@ -42,6 +42,7 @@
   "python.analysis.diagnosticMode": "workspace",
   "python.analysis.typeCheckingMode": "basic",
   "[python]": { "editor.defaultFormatter": null },
+  "redhat.telemetry.enabled": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.fontSize": 16,

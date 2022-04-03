@@ -18,13 +18,13 @@ alias gsx='git stash drop'
 
 # docker
 alias d='docker'
-alias di='docker images'
-alias db='docker build'
+alias dil='docker image ls'
+alias dib='docker image build'
 alias dbx='docker buildx build --platform linux/amd64'
-alias dr='docker rm'
-alias dri='docker rmi'
-alias dl='docker ps'
-alias dla='docker ps -a'
+alias dcr='docker container rm'
+alias dir='docker image rm'
+alias dcl='docker container ls'
+alias dcla='docker container ls -a'
 
 # terraform
 alias tf='terraform'

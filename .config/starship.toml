@@ -1,6 +1,6 @@
 # ~/.config/starship.toml
 
-# シェルプロンプトの間に空行を挿入します。
+# シェルプロンプトの間に空行を挿入します
 add_newline = true
 
 # ファイルをスキャンする際のタイムアウト時間
@@ -15,10 +15,6 @@ error_symbol = "[\\(。>ㅿ<。\\)](bold white)"    # コマンド失敗時
 [conda]
 format = "[$symbol$environment](dimmed green) "
 ignore_base = false  # base環境も表示させたい
-
-# AWS
-[aws]
-format = '[(on $symbol $profile)]($style)'
 
 # Git
 [git_branch]

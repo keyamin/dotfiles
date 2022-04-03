@@ -29,11 +29,7 @@ done
 asdf install
 
 # VSCode
-cd $THIS_DIR/vscode
-./setup.sh
-cd $THIS_DIR
+./vscode/setup.sh
 
 # Mac Setup
-cd $THIS_DIR/mac
-./setup.sh
-cd $THIS_DIR
+./mac/setup.sh
