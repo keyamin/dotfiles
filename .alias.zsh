@@ -26,6 +26,12 @@ alias dir='docker image rm'
 alias dcl='docker container ls'
 alias dcla='docker container ls -a'
 
+# kubectl
+alias kc='kubectl'
+
+# minikube
+alias mk='minikube'
+
 # terraform
 alias tf='terraform'
 alias tfp='terraform plan'

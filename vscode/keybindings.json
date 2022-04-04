@@ -46,10 +46,16 @@
     "command": "filesExplorer.copy",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
+  // カット
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
   // ペースト
   {
     "key": "p",
-    "command": "filesExplorer.copyFilesExplorer.paste",
+    "command": "FilesExplorer.paste",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   // フォルダをすべて畳む
@@ -80,12 +86,12 @@
   },
   // DiffEditor上で一部をステージング
   {
-    "key": "s",
+    "key": "ctrl+s",
     "command": "git.stageSelectedRanges",
     "when": "isInDiffEditor"
   },
   {
-    "key": "shift+s",
+    "key": "ctrl+shift+s",
     "command": "git.unstageSelectedRanges",
     "when": "isInDiffEditor"
   },
