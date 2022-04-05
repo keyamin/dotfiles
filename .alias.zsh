@@ -1,4 +1,5 @@
 # vim
+alias n='nvim'
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
@@ -18,13 +19,11 @@ alias gsx='git stash drop'
 
 # docker
 alias d='docker'
-alias dil='docker image ls'
-alias dib='docker image build'
+alias di='docker image'
+alias dc='docker container'
+alias dn='docker network'
+alias dv='docker volume'
 alias dbx='docker buildx build --platform linux/amd64'
-alias dcr='docker container rm'
-alias dir='docker image rm'
-alias dcl='docker container ls'
-alias dcla='docker container ls -a'
 
 # kubectl
 alias kc='kubectl'
