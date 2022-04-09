@@ -13,6 +13,9 @@ cd $THIS_DIR/homebrew
 ./setup.sh
 cd $THIS_DIR
 
+# tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # install zinit
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
 if [[ ! -f "$ZINIT_HOME/zinit.zsh" ]]; then

@@ -1,4 +1,6 @@
 set number
+set tabstop=2
+set shiftwidth=2
 
 " leaderをスペースへ設定
 let mapleader = "\<Space>"
