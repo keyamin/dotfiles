@@ -56,6 +56,7 @@
   "vim.vimrc.path": "~/.config/nvim/init.vim",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.openFilesInNewWindow": "off",
+  "window.newWindowDimensions": "maximized",
   "workbench.colorTheme": "GitHub Dark Dimmed",
   "workbench.editor.tabSizing": "shrink",
   "workbench.iconTheme": "material-icon-theme",

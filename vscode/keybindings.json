@@ -55,7 +55,7 @@
   // ペースト
   {
     "key": "p",
-    "command": "FilesExplorer.paste",
+    "command": "filesExplorer.paste",
     "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   // フォルダをすべて畳む

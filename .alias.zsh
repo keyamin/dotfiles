@@ -4,6 +4,9 @@ alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 
+# VSCode
+alias c='code'
+
 # git
 alias g='git'
 alias ga='git add'
