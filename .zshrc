@@ -26,6 +26,7 @@ zinit light-mode for \
 #==============================================================#
 # 補完
 zinit light zsh-users/zsh-autosuggestions
+zinit light zsh-users/zsh-completions
 
 # シンタックスハイライト
 zinit light zdharma-continuum/fast-syntax-highlighting
@@ -58,3 +59,11 @@ export PATH=$PATH:$GOPATH/bin
 ##              alias                                         ##
 #==============================================================#
 [ -f ~/.alias.zsh ] && source ~/.alias.zsh
+
+#==============================================================#
+##              history                                       ##
+#==============================================================#
+setopt share_history
+setopt inc_append_history
+setopt hist_save_no_dups
+setopt hist_reduce_blanks
