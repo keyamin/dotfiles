@@ -1,4 +1,5 @@
 set number
+set history=200
 set tabstop=2
 set shiftwidth=2
 
@@ -23,3 +24,13 @@ inoremap <silent> jj <ESC>
 
 " マウス操作有効化
 set mouse=a
+
+" コマンド履歴移動
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
+
+" コロンとセミコロン入れ替え
+nnoremap ; :
+nnoremap : ;
+vnoremap : :
+vnoremap : ;
