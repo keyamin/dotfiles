@@ -1,5 +1,8 @@
 bierner.emojisense
 bierner.markdown-emoji
+bierner.markdown-mermaid
+bpruitt-goddard.mermaid-markdown-syntax-highlighting
+bungcip.better-toml
 christian-kohler.path-intellisense
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
@@ -12,6 +15,7 @@ Gruntfuggly.todo-tree
 hashicorp.terraform
 humao.rest-client
 ipatalas.vscode-postfix-ts
+matklad.rust-analyzer
 mechatroner.rainbow-csv
 mikestead.dotenv
 ms-azuretools.vscode-docker
@@ -29,5 +33,6 @@ redhat.vscode-yaml
 shd101wyy.markdown-preview-enhanced
 steoates.autoimport
 streetsidesoftware.code-spell-checker
+vadimcn.vscode-lldb
 VisualStudioExptTeam.vscodeintellicode
 vscodevim.vim
