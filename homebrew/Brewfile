@@ -49,7 +49,6 @@ cask "notion"
 cask "postman"
 cask "slack"
 cask "stoplight-studio"
-cask "twitch"
 cask "visual-studio-code"
 cask "zoom"
 
