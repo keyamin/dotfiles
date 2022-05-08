@@ -26,10 +26,13 @@ fi
 # asdf
 ln -snfv "$(pwd)/.tool-versions" "$HOME/.tool-versions"
 ln -snfv "$(pwd)/.asdfrc" "$HOME/.asdfrc"
-for plugin in nodejs terraform awscli pulumi python eksctl rust;do
+for plugin in nodejs terraform awscli pulumi python eksctl;do
 	asdf plugin add "$plugin"
 done
 asdf install
+
+# Rust
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
 
 # VSCode
 ./vscode/setup.sh
