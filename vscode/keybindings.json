@@ -62,7 +62,7 @@
   {
     "key": "shift+h",
     "command": "workbench.files.action.collapseExplorerFolders",
-    "when": "!editorFocus"
+    "when": "!editorFocus && !inputFocus"
   },
   // ----------------------------------------------------------
   // Git
