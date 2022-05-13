@@ -51,7 +51,6 @@
   "terminal.integrated.fontSize": 16,
   "[terraform]": { "editor.defaultFormatter": "hashicorp.terraform" },
   "vim.hlsearch": true,
-  "vim.useSystemClipboard": true,
   "vim.enableNeovim": true,
   "vim.neovimUseConfigFile": true,
   "vim.neovimConfigPath": "~/.config/nvim/init.vim",

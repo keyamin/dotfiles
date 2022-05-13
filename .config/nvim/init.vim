@@ -2,6 +2,7 @@ set number
 set history=200
 set tabstop=2
 set shiftwidth=2
+set clipboard+=unnamed
 
 " leaderをスペースへ設定
 let mapleader = "\<Space>"
