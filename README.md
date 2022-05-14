@@ -62,6 +62,10 @@ cd dotfiles
 - Preferences > General > Preferences > Load preferences from a custom folder or URL を on にし、設定ファイルがあるフォルダを選択する
 - その下の Save changes を Automatically に設定
 
+### GitHub
+
+- `gh auth login`コマンドでログインする
+
 ### VSCode
 
 - GitHub アカウントで認可
