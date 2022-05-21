@@ -15,6 +15,8 @@
   "editor.parameterHints.enabled": false,
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": true,
+  "extensions.autoCheckUpdates": true,
+  "extensions.autoUpdate": true,
   "files.associations": { "*.tfvars": "terraform" },
   "files.trimTrailingWhitespace": true,
   "eslint.validate": ["typescript", "typescriptreact"],
