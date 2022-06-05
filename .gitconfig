@@ -12,3 +12,7 @@
 	default = current
 [init]
 	defaultBranch = main
+[alias]
+	co = checkout
+	discard = checkout --
+	unstage = reset HEAD --
