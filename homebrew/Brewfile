@@ -45,7 +45,6 @@ cask "iterm2"
 cask "kindle"
 cask "kindle-previewer"
 cask "logitech-options"
-cask "microsoft-teams"
 cask "notion"
 cask "postman"
 cask "slack"
@@ -56,5 +55,4 @@ cask "zoom"
 ## mas
 mas "Magnet", id: 441258766
 mas "Spark", id: 1176895641
-mas "TweetDeck", id: 485812721
 mas "LINE", id: 539883307
