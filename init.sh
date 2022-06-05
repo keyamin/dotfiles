@@ -1,12 +1,12 @@
 THIS_DIR=$(cd $(dirname $0); pwd)
 
-for dotfile in .zshrc .zprofile .alias.zsh .gitconfig .gitignore .tmux.conf; do
+for dotfile in .zshrc .zprofile .alias.zsh .gitconfig .gitignore .tmux.conf .vimrc; do
 	ln -snfv "${THIS_DIR}/$dotfile" "$HOME/$dotfile"
 done
 
 mkdir -p $HOME/.config/nvim
-ln -snfv "$(pwd)/.config/starship.toml" "$HOME/.config/starship.toml"
-ln -snfv "$(pwd)/.config/nvim/init.vim" "$HOME/.config/nvim/init.vim"
+ln -snfv "${THIS_DIR}/.config/starship.toml" "$HOME/.config/starship.toml"
+ln -snfv "${THIS_DIR}/.vimrc" "$HOME/.config/nvim/init.vim"
 
 # Homebrew
 cd $THIS_DIR/homebrew

@@ -3,6 +3,8 @@ set history=200
 set tabstop=2
 set shiftwidth=2
 set clipboard+=unnamed
+set hlsearch
+set incsearch
 
 " leaderをスペースへ設定
 let mapleader = "\<Space>"
@@ -29,9 +31,3 @@ set mouse=a
 " コマンド履歴移動
 cnoremap <C-p> <Up>
 cnoremap <C-n> <Down>
-
-" コロンとセミコロン入れ替え
-nnoremap ; :
-nnoremap : ;
-vnoremap : :
-vnoremap : ;
