@@ -28,6 +28,9 @@ alias dn='docker network'
 alias dv='docker volume'
 alias dbx='docker buildx build --platform linux/amd64'
 
+# aws
+alias awsl='aws --profile localstack --endpoint-url http://localhost:4566'
+
 # kubectl
 alias kc='kubectl'
 
