@@ -16,6 +16,7 @@ GitHub.vscode-pull-request-github
 golang.go
 Gruntfuggly.todo-tree
 hashicorp.terraform
+hediet.vscode-drawio
 humao.rest-client
 kisstkondoros.vscode-gutter-preview
 mechatroner.rainbow-csv
@@ -44,3 +45,4 @@ vadimcn.vscode-lldb
 vincaslt.highlight-matching-tag
 VisualStudioExptTeam.vscodeintellicode
 vscodevim.vim
+yzhang.markdown-all-in-one

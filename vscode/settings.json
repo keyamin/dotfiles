@@ -12,7 +12,11 @@
   "editor.minimap.enabled": false,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.suggestSelection": "first",
-  "editor.quickSuggestions": true,
+  "editor.quickSuggestions": {
+    "comments": "on",
+    "strings": "on",
+    "other": "on"
+  },
   "editor.parameterHints.enabled": false,
   "editor.tabSize": 2,
   "editor.trimAutoWhitespace": true,
@@ -37,6 +41,9 @@
   "githubPullRequests.fileListLayout": "tree",
   "go.formatTool": "gofmt",
   "go.toolsManagement.autoUpdate": true,
+  "go.lintOnSave": "workspace",
+  "go.lintTool": "golangci-lint",
+  "go.lintFlags": ["--fast"],
   "[go]": { "editor.defaultFormatter": null },
   "hediet.vscode-drawio.theme": "Kennedy",
   "javascript.inlayHints.parameterNames.enabled": "all",
@@ -118,5 +125,6 @@
         }
       ]
     }
-  ]
+  ],
+  "githubPullRequests.pullBranch": "never"
 }
