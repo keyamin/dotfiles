@@ -1,0 +1,34 @@
+[user]
+	email = t-hatakeyama@keyamin.jp
+	name = Takahiro Hatakeyama
+[core]
+	editor = vim
+	ignorecase = false
+	quotepath = false
+[color]
+	ui = auto
+[push]
+	default = current
+[init]
+	defaultBranch = main
+[alias]
+	ss = status
+	br = branch
+	brm = branch -m
+	brd = branch -d
+	brdd = branch -D
+	sw = switch
+	swc = switch -c
+	mg = merge --no-ff
+	su = stash -u
+	sl = stash list
+	sa = stash apply
+	sx = stash drop
+	com = commit
+	comm = commit -m
+	coma = commit -a
+	log1 = log -1
+	loggo = log --graph --oneline
+	pushf = push --force-with-lease --force-if-includes
+[tag]
+	sort = version:refname

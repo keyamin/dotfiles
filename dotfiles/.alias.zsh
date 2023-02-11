@@ -9,16 +9,6 @@ alias c='code'
 
 # git
 alias g='git'
-alias ga='git add'
-alias gcm='git commit -m'
-alias gs='git switch'
-alias gp='git push'
-alias gpl='git pull'
-alias gst='git stash'
-alias gsl='git stash list'
-alias gsu='git stash -u'
-alias gsa='git stash apply'
-alias gsx='git stash drop'
 
 # docker
 alias d='docker'
@@ -39,11 +29,9 @@ alias mk='minikube'
 
 # terraform
 alias tf='terraform'
+alias terrafrom='terraform'
 alias tfp='terraform plan'
 alias tfa='terraform apply'
-# pulumi
-alias p='pulumi'
-alias pu='pulumi up'
 
 # exa
 if type "exa" > /dev/null 2>&1; then

@@ -1,41 +1,41 @@
 THIS_DIR=$(cd $(dirname $0); pwd)
 
-for dotfile in .zshrc .zprofile .alias.zsh .gitconfig .gitignore .tmux.conf .vimrc; do
-	ln -snfv "${THIS_DIR}/$dotfile" "$HOME/$dotfile"
+# rosetta
+sudo softwareupdate --install-rosetta --agree-to-license
+
+# dotfiles
+for dotfile in $(ls -a ${THIS_DIR}/dotfiles | grep -v ".??*"); do
+	ln -snfv "${THIS_DIR}/dotfiles/$dotfile" "$HOME/$dotfile"
 done
 
-mkdir -p $HOME/.config/nvim
-ln -snfv "${THIS_DIR}/.config/starship.toml" "$HOME/.config/starship.toml"
-ln -snfv "${THIS_DIR}/.vimrc" "$HOME/.config/nvim/init.vim"
+# .gitignore
+mkdir -p $HOME/.config/git
+ln -snfv "${THIS_DIR}/.gitignore_global" "$HOME/.config/git/ignore"
 
 # Homebrew
-cd $THIS_DIR/homebrew
-./setup.sh
-cd $THIS_DIR
-
-# tpm
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
-# install zinit
-ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
-if [[ ! -f "$ZINIT_HOME/zinit.zsh" ]]; then
-	mkdir -p "$(dirname $ZINIT_HOME)"
-	git clone https://github.com/zdharma-continuum/zinit.git "$ZINIT_HOME"
+if !(type "brew" >/dev/null 2>&1); then
+    echo "installing Homebrew ..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
+echo "run brew doctor ..."
+brew doctor
+
+echo "run brew update ..."
+brew update
+
+echo "run brew upgrade ..."
+brew upgrade
+
+echo "run brew bundle ..."
+brew bundle --file=${THIS_DIR}/Brewfile
+
+echo "run brew cleanup ..."
+brew cleanup
+
 # asdf
-ln -snfv "$(pwd)/.tool-versions" "$HOME/.tool-versions"
-ln -snfv "$(pwd)/.asdfrc" "$HOME/.asdfrc"
-for plugin in nodejs terraform awscli pulumi python eksctl;do
+for plugin in $(cat ${THIS_DIR}/dotfiles/.tool-versions | awk '{print $1}');do
 	asdf plugin add "$plugin"
 done
-asdf install
-
-# Rust
-curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
-
-# VSCode
-./vscode/setup.sh
-
-# Mac Setup
-./mac/setup.sh
+cd ${THIS_DIR}/dotfiles && asdf install && cd ${THIS_DIR}
