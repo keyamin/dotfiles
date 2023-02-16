@@ -14,7 +14,13 @@ $ ./dotfiles/init.sh
 
 ## `init.sh`がやること
 
-- Rosetta2をインストールする
+- Rosetta2 をインストールする
 - `dotfiles`内のファイルと`.gitignore_global`のシンボリックリンクを作る
 - `Brewfile`で`brew bundle`する
-- asdfのプラグインと各バージョンをインストールする
+- asdf のプラグインと各バージョンをインストールする
+
+## 手動インストールが必要なアプリ
+
+- [英かな](https://ei-kana.appspot.com/)
+- [homerow](https://www.homerow.app/)
+  - homebrew に追加予定([issue](https://github.com/dexterleng/homerow/issues/29))
