@@ -9,6 +9,9 @@ alias c='code'
 
 # git
 alias g='git'
+alias ghps='gh pr list -a @me --json number,title,headRefName,author | jq -r '\''.[] | "\(.number) - \(.headRefName) - \(.title)"'\'' | fzf --height 30% --prompt "Select PR: " | awk '\''{print $3}'\'' | xargs -I % git switch %'
+alias ghpo='jq -s '\''.[0] + .[1]'\'' <(gh pr list -a @me --json number,title,headRefName,author) <(gh pr list --search "review-requested:@me" --json number,title,headRefName,author) | jq -r '\''.[] | "\(.number) - \(.headRefName) - \(.title) - \(.author.login)"'\'' | fzf --height 30% --prompt "Select PR: " | awk '\''{print $1}'\'' | xargs -I % gh pr view % -w'
+alias ghpc='gh pr create -a @me -w'
 
 # docker
 alias d='docker'

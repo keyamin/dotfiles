@@ -6,6 +6,17 @@
 #
 
 #==============================================================#
+##              Homebrew Completion                           ##
+#==============================================================#
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
+
+#==============================================================#
 ##              alias                                         ##
 #==============================================================#
 [ -f ~/.alias.zsh ] && source ~/.alias.zsh
@@ -19,7 +30,6 @@
 ##              aws cli completer                             ##
 #==============================================================#
 autoload bashcompinit && bashcompinit
-autoload -Uz compinit && compinit
 complete -C '/opt/homebrew/bin/aws_completer' aws
 
 #==============================================================#
