@@ -1,0 +1,7 @@
+[tools]
+awscli = "latest"
+terraform = "1.7.4"
+python = "3.12.2"
+pipx = "latest"
+tflint = "0.50.3"
+node = "20"

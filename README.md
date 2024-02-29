@@ -15,12 +15,15 @@ $ ./dotfiles/init.sh
 ## `init.sh`がやること
 
 - Rosetta2 をインストールする
-- `dotfiles`内のファイルと`.gitignore_global`のシンボリックリンクを作る
+- 各設定ファイルのシンボリックリンクを作る
 - `Brewfile`で`brew bundle`する
-- asdf のプラグインと各バージョンをインストールする
+- .mise.toml で指定したものをインストールする
+- poetry をインストールする
 
 ## 手動インストールが必要なアプリ
 
+- [VSCode Insiders](https://code.visualstudio.com/insiders/)
+- [Session Manager Plugin](https://docs.aws.amazon.com/ja_jp/systems-manager/latest/userguide/install-plugin-macos-overview.html)
 - [英かな](https://ei-kana.appspot.com/)
-- [homerow](https://www.homerow.app/)
-  - homebrew に追加予定([issue](https://github.com/dexterleng/homerow/issues/29))
+- Universal Audio 関連のセットアップと手動ダウンロード
+  - <https://help.uaudio.com/hc/en-us/articles/360057137692-Apple-Silicon-M1-M2-and-M3-Compatibility-with-Universal-Audio-Devices>
