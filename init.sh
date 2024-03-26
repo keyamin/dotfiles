@@ -51,5 +51,7 @@ brew cleanup
 # mise
 cd ${THIS_DIR}/dotfiles && mise install && cd ${THIS_DIR} || exit
 
+source "$HOME/.zshrc"
+
 # poetry
 pipx install poetry
