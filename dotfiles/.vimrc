@@ -5,6 +5,8 @@ set shiftwidth=2
 set clipboard+=unnamed
 set hlsearch
 set incsearch
+set ignorecase
+set visualbell
 
 " leaderをスペースへ設定
 let mapleader = "\<Space>"
@@ -24,6 +26,12 @@ nnoremap <ESC><ESC> :nohl<CR>
 
 " ノーマルモードに戻る
 inoremap <silent> jj <ESC>
+
+" インサートモードではEmacs形式でカーソル移動
+inoremap <C-f> <Right>
+inoremap <C-b> <Left>
+inoremap <C-p> <Up>
+inoremap <C-n> <Down>
 
 " マウス操作有効化
 set mouse=a
