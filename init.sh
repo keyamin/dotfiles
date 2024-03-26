@@ -16,6 +16,7 @@ ln -snfv "${THIS_DIR}/.gitignore_global" "$HOME/.config/git/ignore"
 # .vimrc
 mkdir -p $HOME/.config/nvim
 ln -snfv "${THIS_DIR}/dotfiles/.vimrc" "$HOME/.config/nvim/init.vim"
+ln -snfv "${THIS_DIR}/dotfiles/.vimrc" "$HOME/.ideavimrc"
 
 # .mise.toml
 mkdir -p $HOME/.config/mise
